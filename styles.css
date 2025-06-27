@@ -87,6 +87,132 @@ ytd-comments-entry-point-header-renderer {
     display: none !important;
 }
 
+/* ============ AD BLOCKING STYLES ============ */
+
+/* Video ads and overlays */
+.video-ads,
+.ytp-ad-module,
+.ytp-ad-overlay-container,
+.ytp-ad-text-overlay,
+.ytp-ad-player-overlay,
+.ytp-ad-player-overlay-instream-info,
+.ytp-ad-image-overlay,
+.ytp-ad-overlay-close-button,
+.ytp-ad-overlay-close-container,
+.ytp-ad-text,
+.ytp-ad-preview-container,
+.ytp-ad-preview-image,
+.ytp-ad-skip-button-container,
+.ytp-ad-skip-button,
+.ytp-ad-info,
+.ytp-ad-button-icon,
+.ad-container,
+.ad-div,
+.masthead-ad-control,
+.iv-drawer,
+.ytp-suggested-action {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+
+/* Sponsored content and promoted videos */
+ytd-promoted-sparkles-text-search-renderer,
+ytd-search-pyv-renderer,
+ytd-promoted-video-renderer,
+ytd-compact-promoted-video-renderer,
+ytd-promoted-sparkles-web-renderer,
+[aria-label*="Sponsored"],
+[aria-label*="Ad"],
+.ytd-promoted-sparkles-text-search-renderer,
+.ytd-search-pyv-renderer,
+.ytd-promoted-video-renderer,
+.ytd-compact-promoted-video-renderer,
+span:contains("Sponsored"),
+span:contains("Ad ·") {
+    display: none !important;
+}
+
+/* Banner and display ads */
+#masthead-ad,
+.masthead-ad,
+#player-ads,
+.player-ads,
+ytd-display-ad-renderer,
+ytd-companion-slot-renderer,
+ytd-action-companion-ad-renderer,
+.GoogleActiveViewElement,
+#google_companion_ad_div,
+#watch-sidebar-ad,
+.videowall-endscreen,
+.advertisement,
+.ad-showing,
+#ad_creative_1,
+#ad_creative_2,
+#ad_creative_3,
+yt-mealbar-promo-renderer,
+ytd-statement-banner-renderer[has-statement-banner],
+ytd-banner-promo-renderer {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Inline and feed ads */
+ytd-ad-slot-renderer,
+.ytd-ad-slot-renderer,
+ytd-in-feed-ad-layout-renderer,
+.ytd-in-feed-ad-layout-renderer,
+ytd-ads-engagement-panel-content-renderer,
+.ad-slot-renderer,
+.sparkles-light-cta,
+.promoted-sparkles-text-search-renderer {
+    display: none !important;
+}
+
+/* Shopping and product ads */
+ytd-product-details-drawer,
+ytd-shopping-carousel-renderer,
+ytd-brand-video-shelf-renderer,
+ytd-brand-video-singleton-renderer,
+.ytd-shopping-carousel-renderer,
+#shopping-tab,
+ytd-offer-module-renderer {
+    display: none !important;
+}
+
+/* Premium promotion and membership ads */
+ytd-popup-container,
+tp-yt-paper-dialog,
+ytd-mealbar-promo-renderer,
+.ytd-mealbar-promo-renderer,
+ytd-premium-promo-renderer,
+.premium-yva,
+#masthead-premium-yva {
+    display: none !important;
+}
+
+/* Ad markers and indicators */
+.ytp-ad-duration-remaining,
+.ytp-ad-text-overlay,
+.ytp-flyout-cta,
+.ytp-suggested-action-badge,
+.ytp-videowall-still,
+.annotation,
+.annotation-close,
+.video-annotation {
+    display: none !important;
+}
+
+/* Clean up ad containers */
+.ad-container[style],
+div[id*="google_ads"],
+div[class*="google-ads"],
+div[id*="_ads_"],
+div[class*="_ads_"] {
+    display: none !important;
+}
+
 /* Replace home content with clean message */
 ytd-browse[page-subtype="home"]::after {
     content: "🧠 Brain rot content blocked. Use search to find specific videos." !important;

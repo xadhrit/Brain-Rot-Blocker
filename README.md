@@ -4,13 +4,15 @@
 
 Wanted to block brain rot content in youtube?
 
-### Vibe Coded Features 
+### Features 
 
 * Blocks all the shorts videos
 
 * No suggestions on every fresh reload 
 
 * Remove the dom object of subscribe, like and comment bc they're distractions.
+
+* Ad Blocker (working with chrome, firefox, brave)
 
 
 ## Loading Process 
