@@ -61,6 +61,9 @@
         ]
     };
 
+    // function to block ad scripts 
+    function adsElements(){}
+
     // Function to hide elements
     function hideElements(selectorArray) {
         selectorArray.forEach(selector => {

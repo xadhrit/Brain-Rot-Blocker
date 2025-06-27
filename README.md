@@ -19,3 +19,5 @@ Wanted to block brain rot content in youtube?
 2. Go to chrome://extensions
 3. Enable the developer mode
 4. Load the package
+
+follow me on x <a href='https://x.com/xadhrit'>@xadhrit</a> 
