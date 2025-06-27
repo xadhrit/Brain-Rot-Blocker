@@ -13,3 +13,9 @@ Wanted to block brain rot content in youtube?
 * Remove the dom object of subscribe, like and comment bc they're distractions.
 
 
+## Loading Process 
+
+1. Clone the repo
+2. Go to chrome://extensions
+3. Enable the developer mode
+4. Load the package
