@@ -1,0 +1,101 @@
+/* Hide YouTube Shorts */
+ytd-shorts,
+ytd-rich-shelf-renderer[is-shorts],
+ytd-reel-shelf-renderer,
+[is-shorts],
+ytd-video-renderer[is-shorts],
+.ytd-shorts,
+#shorts-container,
+ytd-mini-game-card-renderer,
+ytd-shorts-lockup-view-model,
+.ytd-rich-shelf-renderer[aria-label*="Shorts"],
+ytd-reel-video-renderer,
+ytd-shorts-player,
+.shorts-player,
+#dismissible[href*="/shorts/"],
+a[href*="/shorts/"],
+ytd-compact-video-renderer a[href*="/shorts/"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Hide home page suggestions and recommended content */
+ytd-browse[page-subtype="home"] #contents,
+ytd-two-column-browse-results-renderer #primary,
+.ytd-browse[page-subtype="home"] .ytd-item-section-renderer,
+ytd-rich-grid-renderer,
+ytd-rich-section-renderer,
+#contents.ytd-rich-grid-renderer,
+ytd-continuation-item-renderer {
+    display: none !important;
+}
+
+/* Hide trending and explore suggestions */
+ytd-browse[page-subtype="trending"] #contents,
+ytd-browse[page-subtype="explore"] #contents {
+    display: none !important;
+}
+
+/* Hide sidebar suggestions */
+#secondary,
+#related,
+.ytd-watch-next-secondary-results-renderer,
+ytd-compact-video-renderer,
+ytd-shelf-renderer {
+    display: none !important;
+}
+
+/* Hide interactive elements */
+#subscribe-button,
+ytd-subscribe-button-renderer,
+.ytd-subscribe-button-renderer,
+#actions #top-level-buttons-computed,
+ytd-menu-renderer #button,
+ytd-toggle-button-renderer,
+.ytd-video-primary-info-renderer #menu,
+#actions-inner,
+.ytd-video-primary-info-renderer #actions,
+ytd-sentiment-bar-renderer,
+#actions.ytd-watch-metadata {
+    display: none !important;
+}
+
+/* Hide comment section */
+#comments,
+ytd-comments,
+ytd-comments-header-renderer,
+ytd-comment-thread-renderer,
+#sections.ytd-comments,
+ytd-comments-entry-point-header-renderer {
+    display: none !important;
+}
+
+/* Clean up empty spaces */
+.ytd-watch-flexy[theater] #primary-inner,
+.ytd-watch-flexy #primary-inner {
+    margin-bottom: 0 !important;
+}
+
+/* Hide end screen suggestions */
+.ytp-ce-element,
+.ytp-cards-teaser,
+.ytp-endscreen-element,
+.ytp-pause-overlay {
+    display: none !important;
+}
+
+/* Replace home content with clean message */
+ytd-browse[page-subtype="home"]::after {
+    content: "🧠 Brain rot content blocked. Use search to find specific videos." !important;
+    display: block !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    color: #666 !important;
+    padding: 50px !important;
+    background: #f9f9f9 !important;
+    margin: 20px !important;
+    border-radius: 8px !important;
+}

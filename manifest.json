@@ -1,0 +1,29 @@
+{
+   "manifest_version": 3, 
+   "name": "Youtube Brain Rot Blocker", 
+   "version": "0.1", 
+   "description": "Blocks Youtube shorts, suggestions, and distracting elements", 
+   "permissions": [
+      "activeTab"
+   ], 
+
+   "host_permissions": [
+      "*://*.youtube.com/*"
+   ], 
+
+   "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"], 
+        "js": ["content.js"], 
+        "css": ["styles.css"], 
+        "run_at": "document_start"
+      }
+   ], 
+
+   "web_accessible_resources": [
+     {
+       "resources": ["styles.css"], 
+       "matches": ["*://*.youtube.com/*"]
+     }
+   ]
+}
